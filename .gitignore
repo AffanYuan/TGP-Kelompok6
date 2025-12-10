@@ -1,0 +1,68 @@
+##############################
+# Ignore Docker runtime data #
+##############################
+
+# MinIO data (bucket storage)
+data/
+*/.minio.sys/
+
+# Metabase internal DB
+metabase-data/
+
+# PostgreSQL data files
+postgres-data/
+
+# Spark runtime / temp / volume folders
+spark/work-dir/
+spark/output/
+spark/logs/
+
+# Delta Lake / Warehouse
+warehouse/
+
+##############################
+# Ignore Python related files #
+##############################
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+##############################
+# Ignore environment files    #
+##############################
+
+.env
+.env.local
+*.env
+
+##############################
+# Ignore logs & temp files    #
+##############################
+
+*.log
+*.tmp
+*.swp
+*.swo
+
+##############################
+# Ignore OS / Editor files    #
+##############################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+##############################
+# Node / JS (kalau nanti ada) #
+##############################
+node_modules/
+dist/
